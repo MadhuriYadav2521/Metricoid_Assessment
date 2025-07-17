@@ -10,7 +10,7 @@ const Card = () => {
 
     const fetchUSers = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/getAllUSers')
+            const response = await axios.get('https://metricoid-assessment.onrender.com/getAllUSers')
             console.log(response.data.users);
 
             setUserData(response.data.users)
